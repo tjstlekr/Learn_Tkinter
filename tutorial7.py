@@ -3,25 +3,22 @@ from Tkinter import *
 root = Tk()
 
 
-def leftclick(event):
+def leftClick(self,event):
+    print("Left Click Captured")
 
 
-    print"Left Click Captured"
+def middleClick(self,event):
+    print("right")
 
 
-def rightclick(event):
-    print "right click captured"
-
-
-def middleclick(event):
-    print"right"
+def rightClick(self,event):
+    print ("right click captured")
 
 
 frame = Frame(root, width=300, height=300)
-
-frame.bind("<button-1>",leftclick)
-frame.bind("<button-2>",middleclick)
-frame.bind("<button-3>",rightclick)
+frame.bind("<button-1>",'',leftClick)
+frame.bind("<button-2>",'',middleClick)
+frame.bind("<button-3>",'',rightClick)           #'' is there just so that binding doesnt get replaced by next bind()
 frame.pack()
 
 root.mainloop()
