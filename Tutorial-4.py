@@ -9,10 +9,8 @@ label2 = Label(root,text="Password")
 entry_1 =Entry(root)    #textbox
 entry_2 = Entry(root)
 
-label.grid(row=0,sticky=E)
-label2.grid(row=1,sticky=E)         #sticky is used for alligning the labels in East direction :D
-                                    #perform the program without using sticky argument
-
+label.grid(row=0)
+label2.grid(row=1)
 entry_1.grid(row=0,column=1)
 entry_2.grid(row=1,column=1)        #row and column in grid
 
