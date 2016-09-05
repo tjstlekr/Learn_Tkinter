@@ -16,9 +16,9 @@ def rightClick(self,event):
 
 
 frame = Frame(root, width=300, height=300)
-frame.bind("<button-1>",'',leftClick)
-frame.bind("<button-2>",'',middleClick)
-frame.bind("<button-3>",'',rightClick)           #'' is there just so that binding doesnt get replaced by next bind()
+frame.bind("<Button-1>",leftClick)
+frame.bind("<Button-2>",middleClick)
+frame.bind("<Button-3>",rightClick)           #'' is there just so that binding doesnt get replaced by later bind()
 frame.pack()
 
 root.mainloop()
